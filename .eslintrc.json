@@ -1,0 +1,13 @@
+{
+  "extends": ["prettier"],
+  "rules": {
+    "space-before-function-paren": [
+      "error",
+      {
+        "named": "always",
+        "anonymous": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
+}
