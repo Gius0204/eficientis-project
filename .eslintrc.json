@@ -1,13 +1,18 @@
 {
-  "extends": ["prettier"],
-  "rules": {
-    "space-before-function-paren": [
-      "error",
-      {
-        "named": "always",
-        "anonymous": "never",
-        "asyncArrow": "always"
-      }
-    ]
-  }
+	"extends": ["prettier"],
+	"plugins": ["import"],
+	"rules": {
+		"space-before-function-paren": [
+			"error",
+			{
+				"named": "always",
+				"anonymous": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"no-unused-vars": "warn",
+		"indent": ["error", 2],
+		"import/no-unused-modules": ["error", { "unusedExports": true }]
+	}
 }
