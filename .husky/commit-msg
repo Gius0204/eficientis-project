@@ -5,7 +5,7 @@ commit_msg_file=$1
 if ! npx --no -- commitlint --edit "$commit_msg_file"; then
   echo ""
   echo "❌ Commit inválido."
-  echo "✅ Formato correcto: tipo(área): descripción breve"
+  echo "✅ Formato correcto: prefijo(contexto-modulo): descripción breve"
   echo ""
   exit 1
 fi
